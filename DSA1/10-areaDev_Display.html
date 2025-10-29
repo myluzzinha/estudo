@@ -1,67 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Testando a Tela para desenvolvedor</title>
     <style>
-        /* Configuração geral de oda tela*/
-        /* { */
-            /* margin: 0;
+      /* Configuração geral de oda tela*/
+      /* { */
+      /* margin: 0;
             pdding: 0;
             box-sizing: border-box; */
-        /* } */
+      /* } */
 
-        h1 {
-            text-align: center;
-        }
+      h1 {
+        text-align: center;
+      }
 
-        /*Estilo Block */
-        .info {
-            background-color: rgb(238, 107, 150);
-            padding: 10px;
-            margin: 20px;
-        }
+      /*Estilo Block */
+      .info {
+        background-color: rgb(238, 107, 150);
+        padding: 10px;
+        margin: 20px;
+      }
 
-        /* Estilo inline */
-        /* Observe que o span não tem .
+      /* Estilo inline */
+      /* Observe que o span não tem .
         por ser tag */
-        span{
-            background-color: salmon;
-            color: crimson;
-        }
+      span {
+        background-color: salmon;
+        color: crimson;
+      }
 
-        /* Estilo inline-block */
-        .inlinebox {
-            display: inline-block;
-            /*largura*/
-            width: 100px;
-            /*altura*/
-            height: 50px;
-            background-color: firebrick;
-            text-align: center;
-            /*altura da linha dentro do box*/
-            line-height: 50px;
-            margin-left: 5px;
-        }
+      /* Estilo inline-block */
+      .inlinebox {
+        display: inline-block;
+        /*largura*/
+        width: 100px;
+        /*altura*/
+        height: 50px;
+        background-color: firebrick;
+        text-align: center;
+        /*altura da linha dentro do box*/
+        line-height: 50px;
+        margin-left: 5px;
+      }
 
-        /* Estilo inline */
-        .inline {
-            display: inline;
-            /*largura*/
-            width: 100px;
-            /*altura*/
-            height: 50px;
-            background-color: palevioletred;
-            text-align: center;
-            /*altura dalinhadentro do box*/
-            line-height: 50px;
-            margin-left: 5px;
-        }
+      /* Estilo inline */
+      .inline {
+        display: inline;
+        /*largura*/
+        width: 100px;
+        /*altura*/
+        height: 50px;
+        background-color: palevioletred;
+        text-align: center;
+        /*altura da linha dentro do box*/
+        line-height: 50px;
+        margin-left: 5px;
+      }
     </style>
-</head>
-<body>
-    <h1>Verifique as Configuração dessa tag com o inspecionar do Desenvolvedor</h1>
+  </head>
+  <body>
+    <h1>
+      Verifique as Configuração dessa tag com o inspecionar do Desenvolvedor
+    </h1>
     <h1><span>Clique eom o botão direito do mouse e Inspecionar</span></h1>
 
     <!--Block -->
@@ -69,24 +71,27 @@
     <div class="info">Também sou block e ocupo toda a largura disponível.</div>
 
     <!-- Span in-line -->
-     <p>Este é um texto normal, e <span>isto é um span inline</span>,
-         Veja como ele não quebra a linha, ele ocupa somente o tamanho do texto.</p>
-         <br>
-         <hr>
+    <p>
+      Este é um texto normal, e <span>isto é um span inline</span>, Veja como
+      ele não quebra a linha, ele ocupa somente o tamanho do texto.
+    </p>
+    <br />
+    <hr />
 
-         <h2>Modificamos o display de block para os atributos abaixo:</h2>
-         <h2>inline-Block - É possivel alterar a largura e altura</h2>
-        <div class="inlinebox">Caixa 1</div>
-        <div class="inlinebox">Caixa 2</div>
-        <div class="inlinebox">Caixa 3</div>
+    <h2>Modificamos o display de block para os atributos abaixo:</h2>
+    <h2>inline-Block - É possivel alterar a largura e altura</h2>
+    <div class="inlinebox">Caixa 1</div>
+    <div class="inlinebox">Caixa 2</div>
+    <div class="inlinebox">Caixa 3</div>
 
-        <br><br>
-        <h2>Inline - Não é possivel alterar a largura e altura</h2>
-        <h2>Observe que são as mesmas Configuraçõs da caixa acima alterado para inlne, parece o span</h2>
-        <div class="inline">Caixa 1</div>
-        <div class="inline">Caixa 2</div>
-        <div class="inline">Caixo 3</div>
-        
-</body>
-
+    <br /><br />
+    <h2>Inline - Não é possivel alterar a largura e altura</h2>
+    <h2>
+      Observe que são as mesmas Configuraçõs da caixa acima alterado para inlne,
+      parece o span
+    </h2>
+    <div class="inline">Caixa 1</div>
+    <div class="inline">Caixa 2</div>
+    <div class="inline">Caixo 3</div>
+  </body>
 </html>

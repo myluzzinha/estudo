@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Fixed</title>
+    <style>
+      /* Acrescenta 300 de espaço na vertical */
+      body {
+        height: 300vh;
+      }
+
+      /* Fixa o objetivo */
+      /* Mude a camada com z-index */
+      .fixado {
+        display: inline-block;
+        padding: 5px;
+        border-radius: 20px;
+        background-color: crimson;
+        position: fixed;
+        top: 55px;
+        color: white;
+        /* z-index: -1; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fixado">FIXO</div>
+    <h1>Posição fixa</h1>
+    <h2>Role a página</h2>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+      veritatis nemo quibusdam dolorem ipsum incidunt cum iusto rerum rem
+      quisquam officiis aliquid nobis facilis, repellat, commodi ducimus
+      perspiciatis! Sequi, deleniti.
+    </p>
+  </body>
+</html>

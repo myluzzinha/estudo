@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo de Position Absolute</title>
+    <style>
+      /* Reset da página */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Tamanho da box/caixa */
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+
+      .box-two {
+        background-color: plum;
+        /* Absolute vai para camada acima e não segue o fluxo da tela,
+      ou seja, sai do local onde ele estava */
+        position: absolute;
+        /* left: 20px; */
+        /* O top abaixo funciona esquecendo que há elementos na tela*/
+        /* top: 60px; */
+
+        /* deixa no centro */
+        /* left: 50%; */
+        /* right: 50%; */
+        /* top: 50%; */
+        /* bottom: 50%; */
+
+        /* Será implementado no centro da tela porém não é o centro do objeto,
+        Temos que descontar a metade com este código */
+        /* transform: translate(50px, 100px); move o objeto 50 pixels para direita e 100 pixels para baixo. */
+        /* Código abaixo retira 50% do objeto e reposiciona no centro do objeto ao centro da tela */
+        /* transform: translate(-50%, -50%); */
+        opacity: 0.5;
+        /* z-index: -1; */
+      }
+
+      /* Se estiver dentro de um pai absolute/relative
+      Então segue as propriedades desse pai abaixo */
+      /* .container{ */
+      /* position: absolute; */
+      /* border: 1px red solid; */
+      /* height: 500px; */
+      /* width: 500px; */
+      /* } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>Olá</p>
+      <div class="box box-one">B1</div>
+      <!-- Tirar o B2 do fluxo de cima para baixo -->
+      <p>Oi</p>
+      <div class="box box-two"></div>
+      <p>Mundo</p>
+    </div>
+  </body>
+</html>
