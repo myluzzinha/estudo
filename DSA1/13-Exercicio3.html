@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo position relative</title>
+    <style>
+      .relative {
+        background-color: darkmagenta;
+        width: 300px;
+        position: relative;
+        top: 70px;
+        left: 500px;
+        text-align: center;
+        color: white;
+      }
+
+      .absolute {
+        background-color: darkorchid;
+        width: 90px;
+        height: 90px;
+        text-align: center;
+        position: absolute;
+        margin-left: 35%;
+        margin-top: 25%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="relative">
+      Pai
+      <div class="relative">Filho</div>
+    </div>
+  </body>
+</html>
