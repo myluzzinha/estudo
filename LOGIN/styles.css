@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url(./img/imagem\ -ayvy..png);
+  background: url(img/imagem\ -ayvy..png);
   background-size: cover;
   background-position: center;
 }
@@ -25,6 +25,7 @@ body {
   color: #fff;
   padding: 30px 40px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
 }
 
 .container h1 {
@@ -52,4 +53,70 @@ body {
 }
 
 .input-box input::placeholder {
+  color: #c5c5c5;
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 10px;
+}
+
+.remember-forgot a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.login {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.login:hover {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: 0.3s;
+}
+
+.resgister-link {
+  font-size: 14px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.resgister-link a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.resgister-link a:hover {
+  text-decoration: underline;
 }
