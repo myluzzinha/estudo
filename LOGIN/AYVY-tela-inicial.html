@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AYVY</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .splash {
+        width: 100%;
+        height: 100vh;
+        background-image: url(img/imagem-ayvy-clara.png);
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+      }
+
+      /* Efeito de clique */
+      .splash:active {
+        transform: scale(0.97);
+        transition: transform 0.1s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="splash" onclick="irParaLogin()"></div>
+
+    <script>
+      function irParaLogin() {
+        window.location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>
