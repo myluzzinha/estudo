@@ -11,7 +11,7 @@
     <title>Login da AYVY</title>
   </head>
   <body>
-    <main class="container">
+    <main class="container" style="display: none">
       <form>
         <h1>Login AYVY</h1>
         <div class="input-box">
@@ -38,5 +38,24 @@
         </div>
       </form>
     </main>
+    <script>
+      // exibe .container após 5s com transição suave
+      setTimeout(() => {
+        const el = document.querySelector(".container");
+        if (!el) return;
+        el.style.display = "block";
+        // configura estado inicial para a transição
+        el.style.opacity = "0";
+        el.style.transform = "translateY(10px)";
+        el.style.transition = "opacity 400ms ease, transform 400ms ease";
+        // força reflow para garantir que a transição ocorra
+        void el.offsetWidth;
+        // inicia a animação no próximo frame
+        requestAnimationFrame(() => {
+          el.style.opacity = "1";
+          el.style.transform = "translateY(0)";
+        });
+      }, 2000);
+    </script>
   </body>
 </html>
